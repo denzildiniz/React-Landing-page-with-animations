@@ -2,6 +2,16 @@
     display: flex;
     text-align: center;
     margin: 20px;
+    
+    opacity: 0px;
+    transform: scale(80%);
+    transition : 2s;
+}
+
+.slider__zoom{
+    opacity: 1px;
+    transform: scale(100%);
+    transition : 2s;
 }
 
 .slider__image{
