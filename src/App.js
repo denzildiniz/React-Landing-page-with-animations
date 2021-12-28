@@ -4,10 +4,27 @@ import image_2 from './assets/image_2.jpg'
 import image_3 from './assets/image_3.jpg'
 import Hero from './components/Hero';
 import Slider from './components/Slider';
+import Navbar from './components/Navbar';
+
+const navBarLinks = [
+  {
+    url: "#",
+    title: "Home"
+  },
+  {
+    url: "#",
+    title: "Places"
+  },
+  {
+    url: "#",
+    title: "LogIn"
+  }
+]
 
 function App() {
   return (
     <div className="App">
+      <Navbar navBarLinks={navBarLinks} />
       <Hero imageSrc={image_1} />
       <Slider 
         imageSrc={image_2} 
